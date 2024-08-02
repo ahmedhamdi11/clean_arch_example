@@ -4,7 +4,7 @@ import 'package:clean_arch_example/features/weather/domain/repository/weather_re
 import 'package:dartz/dartz.dart';
 
 class WeatherRepoImpl implements WeatherRepo {
-  final RemoteDataSource _remoteDataSource;
+  final BaseRemoteDataSource _remoteDataSource;
   const WeatherRepoImpl(this._remoteDataSource);
 
   @override
